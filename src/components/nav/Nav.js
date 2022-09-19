@@ -9,7 +9,7 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#")
   return (
   <nav>
-    <a href="#"  onClick={()=>setActiveNav("#")} className={activeNav=== '#' ? 'active': ''}> <AiOutlineHome/></a>
+    <a href="#home"  onClick={()=>setActiveNav("#home")} className={activeNav=== '#home' ? 'active': ''}> <AiOutlineHome/></a>
     <a href="#about" className={activeNav=== '#about' ? 'active': ''} onClick={()=>setActiveNav("#about")}> <AiOutlineUser/></a>
     <a href="#education" className={activeNav=== '#education' ? 'active': ''} onClick={()=>setActiveNav("#education")}> <FaUserGraduate/></a>
     <a href="#experience" className={activeNav=== '#experience' ? 'active': ''} onClick={()=>setActiveNav("#experience")}> <BiBook/></a>

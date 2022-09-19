@@ -119,7 +119,7 @@ const Internship = () => {
           <span className="pro">Feb 2016 - April 2016</span>
           <img
             className="round"
-            src="https://randomuser.me/api/portraits/women/79.jpg"
+            src={STEG}
             alt="user"
           />
           <h3>District STEG Sousse</h3>
