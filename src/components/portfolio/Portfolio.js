@@ -1,11 +1,10 @@
 import React from 'react'
 import "./portfolio.css"
-import IMG1 from "../../assets/portfolio1.jpg"
-import IMG2 from "../../assets/portfolio2.jpg"
-import IMG3 from "../../assets/portfolio3.jpg"
-import IMG4 from "../../assets/portfolio4.jpg"
-import IMG5 from "../../assets/portfolio5.png"
-import IMG6 from "../../assets/portfolio6.jpg"
+import IMG1 from "../../assets/lostThigApp.PNG"
+import IMG2 from "../../assets/weatherApp.PNG"
+import IMG3 from "../../assets/To-Do-App.PNG"
+import IMG4 from "../../assets/movieApp.PNG"
+import IMG5 from "../../assets/postApp.PNG"
 
 
 const Portfolio = () => {
@@ -13,51 +12,43 @@ const Portfolio = () => {
   const data=[{
     id:1,
     image: IMG1,
-    title: "portfolio title here",
-    github: "https://github.com/",
-    demo:"",
+    title: "Lost-Thing-App", 
+    github: "https://github.com/Youssef-Dhaou/mern-app-final-project",
+    demo:"https://main--mern-client-app.netlify.app/",
   },
 
   {
     id:2,
     image: IMG2,
-    title: "portfolio title here",
-    github: "https://github.com/",
-    demo:"",
+    title: "Weather Api",
+    github: "https://github.com/Youssef-Dhaou/weather-app",
+    demo:"https://632335fcc8938e5323ea5f93--weather-react-api-client.netlify.app/",
   },
 
   {
     id:3,
     image: IMG3,
-    title: "portfolio title here",
-    github: "https://github.com/",
-    demo:"",
+    title: "To-Do_List",
+    github: "https://github.com/Youssef-Dhaou/to_do_list",
+    demo:"https://youssef-dhaou.github.io/to_do_list/",
   },
 
   {
     id:4,
     image: IMG4,
-    title: "portfolio title here",
-    github: "https://github.com/",
-    demo:"",
+    title: "Movie app",
+    github: "https://github.com/Youssef-Dhaou/MovieApp",
+    demo:"https://63271c9865440535741291a6--client-movie-app.netlify.app/",
   },
 
   {
     id:5,
     image: IMG5,
-    title: "portfolio title here",
-    github: "https://github.com/",
-    demo:"",
+    title: "postApp",
+    github: "https://github.com/Youssef-Dhaou/post-App",
+    demo:"https://main--monumental-klepon-c40d57.netlify.app/",
   },
 
-
-  {
-    id:6,
-    image: IMG6,
-    title: "portfolio title here",
-    github: "https://github.com/",
-    demo:"",
-  },
 ]
   return (
     <section id="portfolio">
@@ -74,8 +65,8 @@ const Portfolio = () => {
             </div>
             <h3>{title}</h3>
             <div className="portfolio__item-cta">
-            <a href="https://github.com/" className='btn' target="_blank">Github</a>
-            <a href="https://dribbble.com/" className='btn btn-primary' target="_blank">Live Demo</a>
+            <a href={github} className='btn' rel="noreferrer" target="_blank">Github</a>
+            <a href={demo} className='btn btn-primary' rel="noreferrer" target="_blank">Live Demo</a>
             </div>
 </article>
         )
